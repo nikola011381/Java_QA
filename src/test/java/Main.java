@@ -1,5 +1,6 @@
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,12 +10,13 @@ public class Main {
 
 
         WebDriver driver = new ChromeDriver();
-
+driver.manage().window().maximize();
     // Otvoriti Google.com stranicu
-    driver.get("https://www.google.com");
+    driver.get("https://www.elitesecurity.org");
+    driver.findElement(By.cssSelector("input[name='Phrase']")).click();
 
     // Zatvaranje driver objekta
-    driver.quit();
+   // driver.quit();
 }
 
 }
