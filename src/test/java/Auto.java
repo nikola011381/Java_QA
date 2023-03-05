@@ -19,11 +19,11 @@ public class Auto {
         Select subjectHeadingSelect = new Select(driver.findElement(By.id("id_contact")));
         subjectHeadingSelect.selectByVisibleText("Webmaster");
         driver.findElement(By.id("email")).click();
-        driver.findElement(By.id("email")).sendKeys("qwe@qwe.com");
-        driver.findElement(By.id("id_order")).sendKeys("79846541");
+        driver.findElement(By.id("email")).sendKeys("test@email.com");
+        driver.findElement(By.id("id_order")).sendKeys("12345678");
         driver.findElement(By.id("fileUpload")).sendKeys("C:\\Users\\Radovic\\IdeaProjects\\Java_QA\\src\\test\\java\\Test.txt");
 
-        driver.findElement(By.tagName("textarea")).sendKeys("Test Message");
+        driver.findElement(By.tagName("textarea")).sendKeys("This is test message");
 
         driver.findElement(By.id("submitMessage")).click();
 
